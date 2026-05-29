@@ -1,0 +1,550 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Used Car Shortlist — Cleveland, OH</title>
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; background: #f3f4f6; color: #1f2937; }
+  .page-header { background: #1e3a5f; color: white; padding: 32px 24px 28px; text-align: center; }
+  .page-header h1 { font-size: 1.75rem; font-weight: 700; margin-bottom: 8px; }
+  .page-header p { font-size: 0.95rem; color: #93c5fd; max-width: 640px; margin: 0 auto; }
+  .grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(340px, 1fr)); gap: 20px; padding: 28px 24px; max-width: 1400px; margin: 0 auto; }
+  .divider-block { padding: 0 24px; max-width: 1400px; margin: 0 auto; }
+  .divider { border: none; border-top: 2px dashed #d1d5db; margin: 8px 0 4px; }
+  .divider-label { text-align: center; font-size: 0.8rem; font-weight: 600; color: #9ca3af; text-transform: uppercase; letter-spacing: 0.06em; padding: 10px 0 4px; }
+  .card { background: white; border-radius: 12px; box-shadow: 0 1px 4px rgba(0,0,0,0.08), 0 4px 16px rgba(0,0,0,0.06); overflow: hidden; display: flex; flex-direction: column; }
+  .photo-wrap { position: relative; background: #eef0f3; height: 200px; flex-shrink: 0; }
+  .photo-wrap img { width: 100%; height: 100%; object-fit: contain; display: block; }
+  .photo-placeholder { width: 100%; height: 100%; display: flex; align-items: center; justify-content: center; background: #eef0f3; }
+  .rank-badge { position: absolute; top: 10px; left: 10px; background: rgba(55,65,81,0.88); color: white; font-size: 0.7rem; font-weight: 700; padding: 3px 9px; border-radius: 999px; letter-spacing: 0.04em; }
+  .card-body { padding: 16px 18px 18px; display: flex; flex-direction: column; gap: 12px; flex: 1; }
+  .car-title { font-size: 1.05rem; font-weight: 700; color: #111827; line-height: 1.3; }
+  .pills { display: flex; flex-wrap: wrap; gap: 6px; }
+  .pill { background: #f0f4ff; color: #3730a3; font-size: 0.72rem; font-weight: 600; padding: 3px 9px; border-radius: 999px; white-space: nowrap; }
+  .specs { font-size: 0.78rem; color: #6b7280; }
+  .dealer-line { font-size: 0.8rem; color: #374151; }
+  .dealer-line strong { font-weight: 600; }
+  .view-btn { display: inline-block; background: #2563eb; color: white; text-decoration: none; font-size: 0.82rem; font-weight: 600; padding: 9px 16px; border-radius: 7px; text-align: center; transition: background 0.15s; }
+  .view-btn:hover { background: #1d4ed8; }
+  .issues-box { background: #fffbeb; border: 1px solid #fcd34d; border-radius: 7px; padding: 10px 12px; }
+  .issues-box .box-label { font-size: 0.7rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.05em; color: #92400e; margin-bottom: 5px; }
+  .issues-box ul { margin: 0; padding-left: 16px; }
+  .issues-box li { font-size: 0.76rem; color: #78350f; line-height: 1.5; }
+  .notes-box { background: #f5f3ff; border: 1px solid #c4b5fd; border-radius: 7px; padding: 10px 12px; }
+  .notes-box .box-label { font-size: 0.7rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.05em; color: #5b21b6; margin-bottom: 4px; }
+  .notes-box p { font-size: 0.76rem; color: #4c1d95; line-height: 1.5; }
+  .score-section { display: flex; flex-direction: column; gap: 5px; }
+  .score-header { font-size: 0.7rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.05em; color: #9ca3af; margin-bottom: 2px; }
+  .score-row { display: flex; align-items: center; gap: 8px; }
+  .score-key { font-size: 0.7rem; color: #6b7280; width: 80px; flex-shrink: 0; }
+  .score-bar-bg { flex: 1; height: 6px; background: #e5e7eb; border-radius: 3px; overflow: hidden; }
+  .score-bar-fill { height: 100%; border-radius: 3px; }
+  .score-val { font-size: 0.68rem; color: #9ca3af; width: 18px; text-align: right; flex-shrink: 0; }
+  footer { text-align: center; font-size: 0.72rem; color: #9ca3af; padding: 24px; border-top: 1px solid #e5e7eb; margin-top: 8px; background: white; }
+</style>
+</head>
+<body>
+
+<div class="page-header">
+  <h1>Used Car Shortlist &mdash; Cleveland, OH under $10,000</h1>
+  <p>Prioritized for reliability, AWD, cargo space for 4 huskies, and longevity.</p>
+</div>
+
+<!-- GROUP 1: PRIMARY (9 cars, sorted by score desc) -->
+<div class="grid" id="group-primary">
+
+  <!-- Card #1: 2011 Subaru Outback 3.6R Limited (score 69) -->
+  <div class="card">
+    <div class="photo-wrap">
+      <img src="https://static.cargurus.com/images/forsale/2026/04/22/07/21/2011_subaru_outback-pic-2034396057120612654-1024x768.jpeg" alt="2011 Subaru Outback" style="width:100%;height:100%;object-fit:contain;display:block;" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+      <div class="photo-placeholder" style="display:none"><svg width="64" height="48" viewBox="0 0 64 48" fill="none" xmlns="http://www.w3.org/2000/svg"><rect width="64" height="48" rx="4" fill="#d1d5db"/><path d="M10 32 L14 20 C15 17 17 16 20 16 L44 16 C47 16 49 17 50 20 L54 32 L54 34 C54 35.1 53.1 36 52 36 L50 36 C50 36 50 34 48 34 L16 34 C14 34 14 36 14 36 L12 36 C10.9 36 10 35.1 10 34 Z" fill="#9ca3af"/><circle cx="20" cy="34" r="4" fill="#6b7280"/><circle cx="44" cy="34" r="4" fill="#6b7280"/><rect x="22" y="19" width="20" height="10" rx="2" fill="#d1d5db"/></svg></div>
+      <span class="rank-badge">#1</span>
+    </div>
+    <div class="card-body">
+      <div class="car-title">2011 Subaru Outback 3.6R Limited</div>
+      <div class="pills">
+        <span class="pill">$8,831</span>
+        <span class="pill">126,166 mi</span>
+        <span class="pill">~21 MPG</span>
+        <span class="pill">76 cu ft cargo</span>
+      </div>
+      <div class="specs">3.6L 6-cyl &nbsp;|&nbsp; 5-speed automatic (5EAT) &nbsp;|&nbsp; AWD</div>
+      <div class="dealer-line"><strong>E Drive Motors</strong> &mdash; Euclid, OH</div>
+      <a class="view-btn" href="https://www.cargurus.com/details/445598679" target="_blank" rel="noopener">View Listing &rarr;</a>
+      <div class="notes-box">
+        <div class="box-label">Listing Notes</div>
+        <p>2 owners, no accidents, clean title. E Drive Motors Euclid &mdash; 4.3/5 stars (33 reviews). Carfax available. 3.6L H6 + 5AT confirmed. Heated seats, moonroof, HK audio.</p>
+      </div>
+      <div class="score-section">
+        <div class="score-header">Score Breakdown &mdash; 69 / 100</div>
+        <div class="score-row"><span class="score-key">Cargo</span><div class="score-bar-bg"><div class="score-bar-fill" style="width:90%;background:#6366f1"></div></div><span class="score-val">9</span></div>
+        <div class="score-row"><span class="score-key">Reliability</span><div class="score-bar-bg"><div class="score-bar-fill" style="width:90%;background:#10b981"></div></div><span class="score-val">9</span></div>
+        <div class="score-row"><span class="score-key">AWD</span><div class="score-bar-bg"><div class="score-bar-fill" style="width:100%;background:#3b82f6"></div></div><span class="score-val">10</span></div>
+        <div class="score-row"><span class="score-key">Mileage</span><div class="score-bar-bg"><div class="score-bar-fill" style="width:60%;background:#f59e0b"></div></div><span class="score-val">6</span></div>
+        <div class="score-row"><span class="score-key">Price</span><div class="score-bar-bg"><div class="score-bar-fill" style="width:40%;background:#f59e0b"></div></div><span class="score-val">4</span></div>
+        <div class="score-row"><span class="score-key">MPG</span><div class="score-bar-bg"><div class="score-bar-fill" style="width:50%;background:#8b5cf6"></div></div><span class="score-val">5</span></div>
+        <div class="score-row"><span class="score-key">Service</span><div class="score-bar-bg"><div class="score-bar-fill" style="width:60%;background:#ec4899"></div></div><span class="score-val">6</span></div>
+        <div class="score-row"><span class="score-key">Dealer</span><div class="score-bar-bg"><div class="score-bar-fill" style="width:50%;background:#14b8a6"></div></div><span class="score-val">5</span></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Card #2: 2012 Subaru Outback 3.6R Limited (score 70) -->
+  <div class="card">
+    <div class="photo-wrap">
+      <img src="https://static.cargurus.com/images/forsale/2026/05/21/10/18/2012_subaru_outback-pic-6987845735415328785-1024x768.jpeg" alt="2012 Subaru Outback 3.6R Limited" loading="lazy" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+      <div class="photo-placeholder" style="display:none"><svg width="64" height="48" viewBox="0 0 64 48" fill="none" xmlns="http://www.w3.org/2000/svg"><rect width="64" height="48" rx="4" fill="#d1d5db"/><path d="M10 32 L14 20 C15 17 17 16 20 16 L44 16 C47 16 49 17 50 20 L54 32 L54 34 C54 35.1 53.1 36 52 36 L50 36 C50 36 50 34 48 34 L16 34 C14 34 14 36 14 36 L12 36 C10.9 36 10 35.1 10 34 Z" fill="#9ca3af"/><circle cx="20" cy="34" r="4" fill="#6b7280"/><circle cx="44" cy="34" r="4" fill="#6b7280"/><rect x="22" y="19" width="20" height="10" rx="2" fill="#d1d5db"/></svg></div>
+      <span class="rank-badge">#2</span>
+    </div>
+    <div class="card-body">
+      <div class="car-title">2012 Subaru Outback 3.6R Limited</div>
+      <div class="pills">
+        <span class="pill">$8,500</span>
+        <span class="pill">144,669 mi</span>
+        <span class="pill">~21 MPG</span>
+        <span class="pill">76 cu ft cargo</span>
+      </div>
+      <div class="specs">3.6L 6-cyl &nbsp;|&nbsp; 5-speed automatic (5EAT) &nbsp;|&nbsp; AWD</div>
+      <div class="dealer-line"><strong>Alliance Area Dealer (via CarGurus)</strong> &mdash; Alliance, OH</div>
+      <a class="view-btn" href="https://www.cargurus.com/details/448677593" target="_blank" rel="noopener">View Listing &rarr;</a>
+      <div class="notes-box">
+        <div class="box-label">Notes</div>
+        <p>3.6R engine = no EJ25 head gasket risk. 5EAT = no CVT. Best Outback to buy. AWD standard. Good mid-budget price. ~50 miles from 44124 &mdash; verify you are OK with the drive. Solid all-around.</p>
+      </div>
+      <div class="score-section">
+        <div class="score-header">Score Breakdown &mdash; 70 / 100</div>
+        <div class="score-row"><span class="score-key">Cargo</span><div class="score-bar-bg"><div class="score-bar-fill" style="width:90%;background:#6366f1"></div></div><span class="score-val">9</span></div>
+        <div class="score-row"><span class="score-key">Reliability</span><div class="score-bar-bg"><div class="score-bar-fill" style="width:90%;background:#10b981"></div></div><span class="score-val">9</span></div>
+        <div class="score-row"><span class="score-key">AWD</span><div class="score-bar-bg"><div class="score-bar-fill" style="width:100%;background:#3b82f6"></div></div><span class="score-val">10</span></div>
+        <div class="score-row"><span class="score-key">Mileage</span><div class="score-bar-bg"><div class="score-bar-fill" style="width:40%;background:#f59e0b"></div></div><span class="score-val">4</span></div>
+        <div class="score-row"><span class="score-key">Price</span><div class="score-bar-bg"><div class="score-bar-fill" style="width:60%;background:#f59e0b"></div></div><span class="score-val">6</span></div>
+        <div class="score-row"><span class="score-key">MPG</span><div class="score-bar-bg"><div class="score-bar-fill" style="width:50%;background:#8b5cf6"></div></div><span class="score-val">5</span></div>
+        <div class="score-row"><span class="score-key">Service</span><div class="score-bar-bg"><div class="score-bar-fill" style="width:50%;background:#ec4899"></div></div><span class="score-val">5</span></div>
+        <div class="score-row"><span class="score-key">Dealer</span><div class="score-bar-bg"><div class="score-bar-fill" style="width:70%;background:#14b8a6"></div></div><span class="score-val">7</span></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Card #3: 2011 Honda CR-V SE AWD (score 69) -->
+  <div class="card">
+    <div class="photo-wrap">
+      <img src="https://platform.cstatic-images.com/xxlarge/in/v2/3ea0b37a-aecd-520c-ae3f-6071840fa3b9/03b49e09-2f67-42c9-80b5-d93806821f52/mSk4kxybU2quE3jZYXqmtpTKWwI.jpg" alt="2011 Honda CR-V SE AWD" loading="lazy" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+      <div class="photo-placeholder" style="display:none"><svg width="64" height="48" viewBox="0 0 64 48" fill="none" xmlns="http://www.w3.org/2000/svg"><rect width="64" height="48" rx="4" fill="#d1d5db"/><path d="M10 32 L14 20 C15 17 17 16 20 16 L44 16 C47 16 49 17 50 20 L54 32 L54 34 C54 35.1 53.1 36 52 36 L50 36 C50 36 50 34 48 34 L16 34 C14 34 14 36 14 36 L12 36 C10.9 36 10 35.1 10 34 Z" fill="#9ca3af"/><circle cx="20" cy="34" r="4" fill="#6b7280"/><circle cx="44" cy="34" r="4" fill="#6b7280"/><rect x="22" y="19" width="20" height="10" rx="2" fill="#d1d5db"/></svg></div>
+      <span class="rank-badge">#3</span>
+    </div>
+    <div class="card-body">
+      <div class="car-title">2011 Honda CR-V SE AWD</div>
+      <div class="pills">
+        <span class="pill">$9,053</span>
+        <span class="pill">138,817 mi</span>
+        <span class="pill">~24 MPG</span>
+        <span class="pill">70 cu ft cargo</span>
+      </div>
+      <div class="specs">2.4L 4-cyl (K24) &nbsp;|&nbsp; 5-speed automatic &nbsp;|&nbsp; AWD</div>
+      <div class="dealer-line"><strong>Great Lakes Honda</strong> &mdash; Akron, OH</div>
+      <a class="view-btn" href="https://www.cars.com/vehicledetail/f4fbf8a6-d4d3-47af-942c-12e01e8d4236/" target="_blank" rel="noopener">View Listing &rarr;</a>
+      <div class="notes-box">
+        <div class="box-label">Listing Notes</div>
+        <p>Carfax certified accident-free. Excellent dealership service history &mdash; originally purchased at nearby Honda dealer, all service records available. Great Lakes Honda &mdash; franchise dealer, 1,153 reviews, 2025 Consumer Dealer Award.</p>
+      </div>
+      <div class="score-section">
+        <div class="score-header">Score Breakdown &mdash; 69 / 100</div>
+        <div class="score-row"><span class="score-key">Cargo</span><div class="score-bar-bg"><div class="score-bar-fill" style="width:70%;background:#6366f1"></div></div><span class="score-val">7</span></div>
+        <div class="score-row"><span class="score-key">Reliability</span><div class="score-bar-bg"><div class="score-bar-fill" style="width:90%;background:#10b981"></div></div><span class="score-val">9</span></div>
+        <div class="score-row"><span class="score-key">AWD</span><div class="score-bar-bg"><div class="score-bar-fill" style="width:80%;background:#3b82f6"></div></div><span class="score-val">8</span></div>
+        <div class="score-row"><span class="score-key">Mileage</span><div class="score-bar-bg"><div class="score-bar-fill" style="width:40%;background:#f59e0b"></div></div><span class="score-val">4</span></div>
+        <div class="score-row"><span class="score-key">Price</span><div class="score-bar-bg"><div class="score-bar-fill" style="width:40%;background:#f59e0b"></div></div><span class="score-val">4</span></div>
+        <div class="score-row"><span class="score-key">MPG</span><div class="score-bar-bg"><div class="score-bar-fill" style="width:70%;background:#8b5cf6"></div></div><span class="score-val">7</span></div>
+        <div class="score-row"><span class="score-key">Service</span><div class="score-bar-bg"><div class="score-bar-fill" style="width:80%;background:#ec4899"></div></div><span class="score-val">8</span></div>
+        <div class="score-row"><span class="score-key">Dealer</span><div class="score-bar-bg"><div class="score-bar-fill" style="width:90%;background:#14b8a6"></div></div><span class="score-val">9</span></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Card #4: 2009 Honda Pilot EX-L AWD (score 67) -->
+  <div class="card">
+    <div class="photo-wrap">
+      <img src="https://images2.autotrader.com/hn/c/e807c508b0b54f0f90ccbb14e532e155.jpg" alt="2009 Honda Pilot EX-L AWD" loading="lazy" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+      <div class="photo-placeholder" style="display:none"><svg width="64" height="48" viewBox="0 0 64 48" fill="none" xmlns="http://www.w3.org/2000/svg"><rect width="64" height="48" rx="4" fill="#d1d5db"/><path d="M10 32 L14 20 C15 17 17 16 20 16 L44 16 C47 16 49 17 50 20 L54 32 L54 34 C54 35.1 53.1 36 52 36 L50 36 C50 36 50 34 48 34 L16 34 C14 34 14 36 14 36 L12 36 C10.9 36 10 35.1 10 34 Z" fill="#9ca3af"/><circle cx="20" cy="34" r="4" fill="#6b7280"/><circle cx="44" cy="34" r="4" fill="#6b7280"/><rect x="22" y="19" width="20" height="10" rx="2" fill="#d1d5db"/></svg></div>
+      <span class="rank-badge">#4</span>
+    </div>
+    <div class="card-body">
+      <div class="car-title">2009 Honda Pilot EX-L AWD</div>
+      <div class="pills">
+        <span class="pill">$6,981</span>
+        <span class="pill">155,000 mi</span>
+        <span class="pill">~20 MPG</span>
+        <span class="pill">88 cu ft cargo</span>
+      </div>
+      <div class="specs">3.5L V6 &nbsp;|&nbsp; 5-speed automatic &nbsp;|&nbsp; AWD</div>
+      <div class="dealer-line"><strong>Cleveland Area Dealer (via Autotrader)</strong> &mdash; Cleveland, OH</div>
+      <a class="view-btn" href="https://www.autotrader.com/cars-for-sale/vehicle/776940193" target="_blank" rel="noopener">View Listing &rarr;</a>
+      <div class="notes-box">
+        <div class="box-label">Notes</div>
+        <p>Best price in the batch at $6,981 &mdash; leaves $3,019 repair buffer. 3.5L V6 + 5AT is excellent. Cargo is class-leading (88 cu ft). 155k miles is high but Honda Pilots routinely run 200k+. Verify AWD on this specific listing.</p>
+      </div>
+      <div class="score-section">
+        <div class="score-header">Score Breakdown &mdash; 67 / 100</div>
+        <div class="score-row"><span class="score-key">Cargo</span><div class="score-bar-bg"><div class="score-bar-fill" style="width:100%;background:#6366f1"></div></div><span class="score-val">10</span></div>
+        <div class="score-row"><span class="score-key">Reliability</span><div class="score-bar-bg"><div class="score-bar-fill" style="width:90%;background:#10b981"></div></div><span class="score-val">9</span></div>
+        <div class="score-row"><span class="score-key">AWD</span><div class="score-bar-bg"><div class="score-bar-fill" style="width:80%;background:#3b82f6"></div></div><span class="score-val">8</span></div>
+        <div class="score-row"><span class="score-key">Mileage</span><div class="score-bar-bg"><div class="score-bar-fill" style="width:20%;background:#f59e0b"></div></div><span class="score-val">2</span></div>
+        <div class="score-row"><span class="score-key">Price</span><div class="score-bar-bg"><div class="score-bar-fill" style="width:80%;background:#f59e0b"></div></div><span class="score-val">8</span></div>
+        <div class="score-row"><span class="score-key">MPG</span><div class="score-bar-bg"><div class="score-bar-fill" style="width:50%;background:#8b5cf6"></div></div><span class="score-val">5</span></div>
+        <div class="score-row"><span class="score-key">Service</span><div class="score-bar-bg"><div class="score-bar-fill" style="width:50%;background:#ec4899"></div></div><span class="score-val">5</span></div>
+        <div class="score-row"><span class="score-key">Dealer</span><div class="score-bar-bg"><div class="score-bar-fill" style="width:70%;background:#14b8a6"></div></div><span class="score-val">7</span></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Card #5: 2008 Toyota Highlander Base 3.5L V6 AWD (score 66) -->
+  <div class="card">
+    <div class="photo-wrap">
+      <img src="https://platform.cstatic-images.com/xxlarge/in/v2/13c2bcde-fd3c-45c8-a49c-75c120f4b9e6/c0ed9985-8725-4572-9384-54eed02bca56/Ro8w28g43tI-2nsoMmuSjC-KiY4.jpg" alt="2008 Toyota Highlander Base 3.5L V6 AWD" loading="lazy" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+      <div class="photo-placeholder" style="display:none"><svg width="64" height="48" viewBox="0 0 64 48" fill="none" xmlns="http://www.w3.org/2000/svg"><rect width="64" height="48" rx="4" fill="#d1d5db"/><path d="M10 32 L14 20 C15 17 17 16 20 16 L44 16 C47 16 49 17 50 20 L54 32 L54 34 C54 35.1 53.1 36 52 36 L50 36 C50 36 50 34 48 34 L16 34 C14 34 14 36 14 36 L12 36 C10.9 36 10 35.1 10 34 Z" fill="#9ca3af"/><circle cx="20" cy="34" r="4" fill="#6b7280"/><circle cx="44" cy="34" r="4" fill="#6b7280"/><rect x="22" y="19" width="20" height="10" rx="2" fill="#d1d5db"/></svg></div>
+      <span class="rank-badge">#5</span>
+    </div>
+    <div class="card-body">
+      <div class="car-title">2008 Toyota Highlander Base 3.5L V6 AWD</div>
+      <div class="pills">
+        <span class="pill">$7,500</span>
+        <span class="pill">154,178 mi</span>
+        <span class="pill">~20 MPG</span>
+        <span class="pill">84 cu ft cargo</span>
+      </div>
+      <div class="specs">3.5L V6 &nbsp;|&nbsp; 5-speed automatic &nbsp;|&nbsp; AWD</div>
+      <div class="dealer-line"><strong>Top Spot Motors LLC</strong> &mdash; Willoughby, OH</div>
+      <a class="view-btn" href="https://www.cars.com/vehicledetail/3f752cc8-a362-454c-9713-f6809fd99d7d/" target="_blank" rel="noopener">View Listing &rarr;</a>
+      <div class="notes-box">
+        <div class="box-label">Listing Notes</div>
+        <p>Multiple owners, no accidents, clean title. Top Spot Motors LLC has 1 review, not rated &mdash; independent lot. Marked 'Good Deal' on Cars.com.</p>
+      </div>
+      <div class="score-section">
+        <div class="score-header">Score Breakdown &mdash; 66 / 100</div>
+        <div class="score-row"><span class="score-key">Cargo</span><div class="score-bar-bg"><div class="score-bar-fill" style="width:100%;background:#6366f1"></div></div><span class="score-val">10</span></div>
+        <div class="score-row"><span class="score-key">Reliability</span><div class="score-bar-bg"><div class="score-bar-fill" style="width:100%;background:#10b981"></div></div><span class="score-val">10</span></div>
+        <div class="score-row"><span class="score-key">AWD</span><div class="score-bar-bg"><div class="score-bar-fill" style="width:80%;background:#3b82f6"></div></div><span class="score-val">8</span></div>
+        <div class="score-row"><span class="score-key">Mileage</span><div class="score-bar-bg"><div class="score-bar-fill" style="width:40%;background:#f59e0b"></div></div><span class="score-val">4</span></div>
+        <div class="score-row"><span class="score-key">Price</span><div class="score-bar-bg"><div class="score-bar-fill" style="width:60%;background:#f59e0b"></div></div><span class="score-val">6</span></div>
+        <div class="score-row"><span class="score-key">MPG</span><div class="score-bar-bg"><div class="score-bar-fill" style="width:50%;background:#8b5cf6"></div></div><span class="score-val">5</span></div>
+        <div class="score-row"><span class="score-key">Service</span><div class="score-bar-bg"><div class="score-bar-fill" style="width:60%;background:#ec4899"></div></div><span class="score-val">6</span></div>
+        <div class="score-row"><span class="score-key">Dealer</span><div class="score-bar-bg"><div class="score-bar-fill" style="width:50%;background:#14b8a6"></div></div><span class="score-val">5</span></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Card #6: 2008 Volvo XC70 3.2 / 133k mi (score 63) -->
+  <div class="card">
+    <div class="photo-wrap">
+      <img src="https://platform.cstatic-images.com/xxlarge/in/v2/970dec94-a2ce-5cdf-aa7f-5a202ffd0c1f/6a52f63e-866a-4196-9789-9af468c31df7/_V8IdHA1o_IfGq_D7-EPNVM_7Bg.jpg" alt="2008 Volvo XC70 3.2" loading="lazy" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+      <div class="photo-placeholder" style="display:none"><svg width="64" height="48" viewBox="0 0 64 48" fill="none" xmlns="http://www.w3.org/2000/svg"><rect width="64" height="48" rx="4" fill="#d1d5db"/><path d="M10 32 L14 20 C15 17 17 16 20 16 L44 16 C47 16 49 17 50 20 L54 32 L54 34 C54 35.1 53.1 36 52 36 L50 36 C50 36 50 34 48 34 L16 34 C14 34 14 36 14 36 L12 36 C10.9 36 10 35.1 10 34 Z" fill="#9ca3af"/><circle cx="20" cy="34" r="4" fill="#6b7280"/><circle cx="44" cy="34" r="4" fill="#6b7280"/><rect x="22" y="19" width="20" height="10" rx="2" fill="#d1d5db"/></svg></div>
+      <span class="rank-badge">#6</span>
+    </div>
+    <div class="card-body">
+      <div class="car-title">2008 Volvo XC70 3.2</div>
+      <div class="pills">
+        <span class="pill">$4,955</span>
+        <span class="pill">133,000 mi</span>
+        <span class="pill">~19 MPG</span>
+        <span class="pill">70 cu ft cargo</span>
+      </div>
+      <div class="specs">3.2L I6 &nbsp;|&nbsp; 6-speed automatic &nbsp;|&nbsp; AWD</div>
+      <div class="dealer-line"><strong>Lake Auto Sales, LLC</strong> &mdash; Hartville, OH</div>
+      <a class="view-btn" href="https://www.cars.com/vehicledetail/dd70ee6c-5b1f-4a0d-a2a9-abfb95916e63/" target="_blank" rel="noopener">View Listing &rarr;</a>
+      
+      <div class="notes-box">
+        <div class="box-label">Listing Notes</div>
+        <p>Multiple owners. No accidents or damage reported. Clean title. No open recalls. Price dropped $500 (was $5,455 on 05/02, now $4,955). Listed as 'Great Deal' &mdash; $101 below market avg. Lake Auto Sales is an independent lot with 12 reviews but not rated.</p>
+      </div>
+      <div class="score-section">
+        <div class="score-header">Score Breakdown &mdash; 63 / 100</div>
+        <div class="score-row"><span class="score-key">Cargo</span><div class="score-bar-bg"><div class="score-bar-fill" style="width:70%;background:#6366f1"></div></div><span class="score-val">7</span></div>
+        <div class="score-row"><span class="score-key">Reliability</span><div class="score-bar-bg"><div class="score-bar-fill" style="width:70%;background:#10b981"></div></div><span class="score-val">7</span></div>
+        <div class="score-row"><span class="score-key">AWD</span><div class="score-bar-bg"><div class="score-bar-fill" style="width:100%;background:#3b82f6"></div></div><span class="score-val">10</span></div>
+        <div class="score-row"><span class="score-key">Mileage</span><div class="score-bar-bg"><div class="score-bar-fill" style="width:40%;background:#f59e0b"></div></div><span class="score-val">4</span></div>
+        <div class="score-row"><span class="score-key">Price</span><div class="score-bar-bg"><div class="score-bar-fill" style="width:100%;background:#f59e0b"></div></div><span class="score-val">10</span></div>
+        <div class="score-row"><span class="score-key">MPG</span><div class="score-bar-bg"><div class="score-bar-fill" style="width:50%;background:#8b5cf6"></div></div><span class="score-val">5</span></div>
+        <div class="score-row"><span class="score-key">Service</span><div class="score-bar-bg"><div class="score-bar-fill" style="width:60%;background:#ec4899"></div></div><span class="score-val">6</span></div>
+        <div class="score-row"><span class="score-key">Dealer</span><div class="score-bar-bg"><div class="score-bar-fill" style="width:50%;background:#14b8a6"></div></div><span class="score-val">5</span></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Card #7: 2008 Subaru Tribeca Limited 7-Passenger (score 66) -->
+  <div class="card">
+    <div class="photo-wrap">
+      <img src="https://static.cargurus.com/images/forsale/2025/09/03/19/22/2008_subaru_tribeca-pic-4619369702700506908-1024x768.jpeg" alt="2008 Subaru Tribeca" style="width:100%;height:100%;object-fit:contain;display:block;" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+      <div class="photo-placeholder" style="display:none"><svg width="64" height="48" viewBox="0 0 64 48" fill="none" xmlns="http://www.w3.org/2000/svg"><rect width="64" height="48" rx="4" fill="#d1d5db"/><path d="M10 32 L14 20 C15 17 17 16 20 16 L44 16 C47 16 49 17 50 20 L54 32 L54 34 C54 35.1 53.1 36 52 36 L50 36 C50 36 50 34 48 34 L16 34 C14 34 14 36 14 36 L12 36 C10.9 36 10 35.1 10 34 Z" fill="#9ca3af"/><circle cx="20" cy="34" r="4" fill="#6b7280"/><circle cx="44" cy="34" r="4" fill="#6b7280"/><rect x="22" y="19" width="20" height="10" rx="2" fill="#d1d5db"/></svg></div>
+      <span class="rank-badge">#7</span>
+    </div>
+    <div class="card-body">
+      <div class="car-title">2008 Subaru Tribeca Limited 7-Passenger</div>
+      <div class="pills">
+        <span class="pill">$3,499</span>
+        <span class="pill">175,103 mi</span>
+        <span class="pill">~18 MPG</span>
+        <span class="pill">85 cu ft cargo</span>
+      </div>
+      <div class="specs">3.6L H6 &nbsp;|&nbsp; 5-speed automatic &nbsp;|&nbsp; AWD</div>
+      <div class="dealer-line"><strong>Empire Motors</strong> &mdash; Cleveland, OH</div>
+      <a class="view-btn" href="https://www.cargurus.com/details/407845879" target="_blank" rel="noopener">View Listing &rarr;</a>
+      <div class="issues-box">
+        <div class="box-label">Known Issues</div>
+        <ul>
+          <li>2 accidents reported &mdash; no damage noted. PPI and Carfax review required.</li>
+        </ul>
+      </div>
+      <div class="notes-box">
+        <div class="box-label">Notes</div>
+        <p>PPI + Carfax review mandatory &mdash; 2 accidents. But $3,499 with EZ36 and 85 cu ft cargo is hard to beat if it comes back clean. Negotiate on the 478 days listed.</p>
+      </div>
+      <div class="score-section">
+        <div class="score-header">Score Breakdown &mdash; 66 / 100</div>
+        <div class="score-row"><span class="score-key">Cargo</span><div class="score-bar-bg"><div class="score-bar-fill" style="width:100%;background:#6366f1"></div></div><span class="score-val">10</span></div>
+        <div class="score-row"><span class="score-key">Reliability</span><div class="score-bar-bg"><div class="score-bar-fill" style="width:80%;background:#10b981"></div></div><span class="score-val">8</span></div>
+        <div class="score-row"><span class="score-key">AWD</span><div class="score-bar-bg"><div class="score-bar-fill" style="width:100%;background:#3b82f6"></div></div><span class="score-val">10</span></div>
+        <div class="score-row"><span class="score-key">Mileage</span><div class="score-bar-bg"><div class="score-bar-fill" style="width:20%;background:#f59e0b"></div></div><span class="score-val">2</span></div>
+        <div class="score-row"><span class="score-key">Price</span><div class="score-bar-bg"><div class="score-bar-fill" style="width:100%;background:#f59e0b"></div></div><span class="score-val">10</span></div>
+        <div class="score-row"><span class="score-key">MPG</span><div class="score-bar-bg"><div class="score-bar-fill" style="width:30%;background:#8b5cf6"></div></div><span class="score-val">3</span></div>
+        <div class="score-row"><span class="score-key">Service</span><div class="score-bar-bg"><div class="score-bar-fill" style="width:30%;background:#ec4899"></div></div><span class="score-val">3</span></div>
+        <div class="score-row"><span class="score-key">Dealer</span><div class="score-bar-bg"><div class="score-bar-fill" style="width:80%;background:#14b8a6"></div></div><span class="score-val">8</span></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Card #8: 2010 Subaru Forester 2.5X (score 63) -->
+  <div class="card">
+    <div class="photo-wrap">
+      <img src="https://static.cargurus.com/images/forsale/2025/09/19/18/50/2010_subaru_forester-pic-5440495759983148086-1024x768.jpeg" alt="2010 Subaru Forester" style="width:100%;height:100%;object-fit:contain;display:block;" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+      <div class="photo-placeholder" style="display:none"><svg width="64" height="48" viewBox="0 0 64 48" fill="none" xmlns="http://www.w3.org/2000/svg"><rect width="64" height="48" rx="4" fill="#d1d5db"/><path d="M10 32 L14 20 C15 17 17 16 20 16 L44 16 C47 16 49 17 50 20 L54 32 L54 34 C54 35.1 53.1 36 52 36 L50 36 C50 36 50 34 48 34 L16 34 C14 34 14 36 14 36 L12 36 C10.9 36 10 35.1 10 34 Z" fill="#9ca3af"/><circle cx="20" cy="34" r="4" fill="#6b7280"/><circle cx="44" cy="34" r="4" fill="#6b7280"/><rect x="22" y="19" width="20" height="10" rx="2" fill="#d1d5db"/></svg></div>
+      <span class="rank-badge">#8</span>
+    </div>
+    <div class="card-body">
+      <div class="car-title">2010 Subaru Forester 2.5X</div>
+      <div class="pills">
+        <span class="pill">$4,999</span>
+        <span class="pill">160,865 mi</span>
+        <span class="pill">~22 MPG</span>
+        <span class="pill">68 cu ft cargo</span>
+      </div>
+      <div class="specs">2.5L 4-cyl (EJ25) &nbsp;|&nbsp; 4-speed automatic (4EAT) &nbsp;|&nbsp; AWD</div>
+      <div class="dealer-line"><strong>Empire Motors</strong> &mdash; Cleveland, OH</div>
+      <a class="view-btn" href="https://www.cargurus.com/details/427480966" target="_blank" rel="noopener">View Listing &rarr;</a>
+      <div class="issues-box">
+        <div class="box-label">Known Issues</div>
+        <ul>
+          <li>EJ25 head gasket risk &mdash; PPI critical</li>
+        </ul>
+      </div>
+      <div class="notes-box">
+        <div class="box-label">Notes</div>
+        <p>PPI mandatory &mdash; EJ25 head gasket check critical. At $4,999 buffer absorbs repair if needed.</p>
+      </div>
+      <div class="score-section">
+        <div class="score-header">Score Breakdown &mdash; 63 / 100</div>
+        <div class="score-row"><span class="score-key">Cargo</span><div class="score-bar-bg"><div class="score-bar-fill" style="width:70%;background:#6366f1"></div></div><span class="score-val">7</span></div>
+        <div class="score-row"><span class="score-key">Reliability</span><div class="score-bar-bg"><div class="score-bar-fill" style="width:80%;background:#10b981"></div></div><span class="score-val">8</span></div>
+        <div class="score-row"><span class="score-key">AWD</span><div class="score-bar-bg"><div class="score-bar-fill" style="width:100%;background:#3b82f6"></div></div><span class="score-val">10</span></div>
+        <div class="score-row"><span class="score-key">Mileage</span><div class="score-bar-bg"><div class="score-bar-fill" style="width:20%;background:#f59e0b"></div></div><span class="score-val">2</span></div>
+        <div class="score-row"><span class="score-key">Price</span><div class="score-bar-bg"><div class="score-bar-fill" style="width:100%;background:#f59e0b"></div></div><span class="score-val">10</span></div>
+        <div class="score-row"><span class="score-key">MPG</span><div class="score-bar-bg"><div class="score-bar-fill" style="width:70%;background:#8b5cf6"></div></div><span class="score-val">7</span></div>
+        <div class="score-row"><span class="score-key">Service</span><div class="score-bar-bg"><div class="score-bar-fill" style="width:80%;background:#ec4899"></div></div><span class="score-val">8</span></div>
+        <div class="score-row"><span class="score-key">Dealer</span><div class="score-bar-bg"><div class="score-bar-fill" style="width:80%;background:#14b8a6"></div></div><span class="score-val">8</span></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Card #9: 2011 Toyota RAV4 Limited V6 4WD (score 60) -->
+  <div class="card">
+    <div class="photo-wrap">
+      <img src="https://static.cargurus.com/images/forsale/2026/03/20/05/05/2011_toyota_rav4-pic-2312652324095564893-1024x768.jpeg" alt="2011 Toyota RAV4 Limited V6 4WD" loading="lazy" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+      <div class="photo-placeholder" style="display:none"><svg width="64" height="48" viewBox="0 0 64 48" fill="none" xmlns="http://www.w3.org/2000/svg"><rect width="64" height="48" rx="4" fill="#d1d5db"/><path d="M10 32 L14 20 C15 17 17 16 20 16 L44 16 C47 16 49 17 50 20 L54 32 L54 34 C54 35.1 53.1 36 52 36 L50 36 C50 36 50 34 48 34 L16 34 C14 34 14 36 14 36 L12 36 C10.9 36 10 35.1 10 34 Z" fill="#9ca3af"/><circle cx="20" cy="34" r="4" fill="#6b7280"/><circle cx="44" cy="34" r="4" fill="#6b7280"/><rect x="22" y="19" width="20" height="10" rx="2" fill="#d1d5db"/></svg></div>
+      <span class="rank-badge">#9</span>
+    </div>
+    <div class="card-body">
+      <div class="car-title">2011 Toyota RAV4 Limited V6 4WD</div>
+      <div class="pills">
+        <span class="pill">$9,500</span>
+        <span class="pill">127,675 mi</span>
+        <span class="pill">~23 MPG</span>
+        <span class="pill">73 cu ft cargo</span>
+      </div>
+      <div class="specs">3.5L V6 &nbsp;|&nbsp; 5-speed automatic &nbsp;|&nbsp; 4WD</div>
+      <div class="dealer-line"><strong>Cleveland Area Dealer (via CarGurus)</strong> &mdash; Cleveland, OH</div>
+      <a class="view-btn" href="https://www.cargurus.com/details/442915572" target="_blank" rel="noopener">View Listing &rarr;</a>
+      <div class="notes-box">
+        <div class="box-label">Notes</div>
+        <p>V6 4WD is the right RAV4 configuration. 5AT, no CVT. At $9,500 it eats most of the budget with 127k miles &mdash; leaves little repair buffer. Cargo is tight for 4 huskies.</p>
+      </div>
+      <div class="score-section">
+        <div class="score-header">Score Breakdown &mdash; 60 / 100</div>
+        <div class="score-row"><span class="score-key">Cargo</span><div class="score-bar-bg"><div class="score-bar-fill" style="width:70%;background:#6366f1"></div></div><span class="score-val">7</span></div>
+        <div class="score-row"><span class="score-key">Reliability</span><div class="score-bar-bg"><div class="score-bar-fill" style="width:90%;background:#10b981"></div></div><span class="score-val">9</span></div>
+        <div class="score-row"><span class="score-key">AWD</span><div class="score-bar-bg"><div class="score-bar-fill" style="width:80%;background:#3b82f6"></div></div><span class="score-val">8</span></div>
+        <div class="score-row"><span class="score-key">Mileage</span><div class="score-bar-bg"><div class="score-bar-fill" style="width:40%;background:#f59e0b"></div></div><span class="score-val">4</span></div>
+        <div class="score-row"><span class="score-key">Price</span><div class="score-bar-bg"><div class="score-bar-fill" style="width:20%;background:#f59e0b"></div></div><span class="score-val">2</span></div>
+        <div class="score-row"><span class="score-key">MPG</span><div class="score-bar-bg"><div class="score-bar-fill" style="width:50%;background:#8b5cf6"></div></div><span class="score-val">5</span></div>
+        <div class="score-row"><span class="score-key">Service</span><div class="score-bar-bg"><div class="score-bar-fill" style="width:50%;background:#ec4899"></div></div><span class="score-val">5</span></div>
+        <div class="score-row"><span class="score-key">Dealer</span><div class="score-bar-bg"><div class="score-bar-fill" style="width:70%;background:#14b8a6"></div></div><span class="score-val">7</span></div>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+<!-- DIVIDER 1 -->
+<div class="divider-block">
+  <hr class="divider">
+  <div class="divider-label">Lower Priority &mdash; Pursue Only If Top Picks Fall Through</div>
+</div>
+
+<!-- GROUP 2: LOWER PRIORITY -->
+<div class="grid" id="group-lower">
+
+  <!-- Card #10: 2013 Mazda CX-5 Touring AWD (score 68) -->
+  <div class="card">
+    <div class="photo-wrap">
+      <img src="https://platform.cstatic-images.com/xxlarge/in/v2/730c9aeb-d0b7-557e-b24c-e5062c00400d/7f61aad3-8819-4028-a7d6-c83809b3ef00/OLVDY7ClB1Ty86-kP8MfssUptag.jpg" alt="2013 Mazda CX-5 Touring AWD" loading="lazy" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+      <div class="photo-placeholder" style="display:none"><svg width="64" height="48" viewBox="0 0 64 48" fill="none" xmlns="http://www.w3.org/2000/svg"><rect width="64" height="48" rx="4" fill="#d1d5db"/><path d="M10 32 L14 20 C15 17 17 16 20 16 L44 16 C47 16 49 17 50 20 L54 32 L54 34 C54 35.1 53.1 36 52 36 L50 36 C50 36 50 34 48 34 L16 34 C14 34 14 36 14 36 L12 36 C10.9 36 10 35.1 10 34 Z" fill="#9ca3af"/><circle cx="20" cy="34" r="4" fill="#6b7280"/><circle cx="44" cy="34" r="4" fill="#6b7280"/><rect x="22" y="19" width="20" height="10" rx="2" fill="#d1d5db"/></svg></div>
+      <span class="rank-badge">#10</span>
+    </div>
+    <div class="card-body">
+      <div class="car-title">2013 Mazda CX-5 Touring AWD</div>
+      <div class="pills">
+        <span class="pill">$7,495</span>
+        <span class="pill">151,459 mi</span>
+        <span class="pill">~28 MPG</span>
+        <span class="pill">65 cu ft cargo</span>
+      </div>
+      <div class="specs">2.0L I4 Skyactiv-G &nbsp;|&nbsp; 6-speed automatic &nbsp;|&nbsp; AWD</div>
+      <div class="dealer-line"><strong>Bowling's Used Cars</strong> &mdash; Canton, OH</div>
+      <a class="view-btn" href="https://www.cars.com/vehicledetail/2cdebd3e-d1dc-4833-b257-4f67cd3c37f6/" target="_blank" rel="noopener">View Listing &rarr;</a>
+      <div class="issues-box">
+        <div class="box-label">Known Issues</div>
+        <ul>
+          <li>Note: Canton is ~53 mi &mdash; slightly outside 50-mile radius</li>
+        </ul>
+      </div>
+      <div class="notes-box">
+        <div class="box-label">Notes</div>
+        <p>Lower priority &mdash; 53 mi away and Mazda reliability less proven at high mileage vs Toyota/Honda. Pursue only if top keeps fall through.</p>
+      </div>
+      <div class="score-section">
+        <div class="score-header">Score Breakdown &mdash; 68 / 100</div>
+        <div class="score-row"><span class="score-key">Cargo</span><div class="score-bar-bg"><div class="score-bar-fill" style="width:70%;background:#6366f1"></div></div><span class="score-val">7</span></div>
+        <div class="score-row"><span class="score-key">Reliability</span><div class="score-bar-bg"><div class="score-bar-fill" style="width:70%;background:#10b981"></div></div><span class="score-val">7</span></div>
+        <div class="score-row"><span class="score-key">AWD</span><div class="score-bar-bg"><div class="score-bar-fill" style="width:80%;background:#3b82f6"></div></div><span class="score-val">8</span></div>
+        <div class="score-row"><span class="score-key">Mileage</span><div class="score-bar-bg"><div class="score-bar-fill" style="width:40%;background:#f59e0b"></div></div><span class="score-val">4</span></div>
+        <div class="score-row"><span class="score-key">Price</span><div class="score-bar-bg"><div class="score-bar-fill" style="width:60%;background:#f59e0b"></div></div><span class="score-val">6</span></div>
+        <div class="score-row"><span class="score-key">MPG</span><div class="score-bar-bg"><div class="score-bar-fill" style="width:80%;background:#8b5cf6"></div></div><span class="score-val">8</span></div>
+        <div class="score-row"><span class="score-key">Service</span><div class="score-bar-bg"><div class="score-bar-fill" style="width:60%;background:#ec4899"></div></div><span class="score-val">6</span></div>
+        <div class="score-row"><span class="score-key">Dealer</span><div class="score-bar-bg"><div class="score-bar-fill" style="width:70%;background:#14b8a6"></div></div><span class="score-val">7</span></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Card #11: 2012 Subaru Forester 2.5X (score 60) -->
+  <div class="card">
+    <div class="photo-wrap">
+      <img src="https://static.cargurus.com/images/forsale/2026/05/02/07/04/2012_subaru_forester-pic-1952121100112555676-1024x768.jpeg" alt="2012 Subaru Forester" style="width:100%;height:100%;object-fit:contain;display:block;" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+      <div class="photo-placeholder" style="display:none"><svg width="64" height="48" viewBox="0 0 64 48" fill="none" xmlns="http://www.w3.org/2000/svg"><rect width="64" height="48" rx="4" fill="#d1d5db"/><path d="M10 32 L14 20 C15 17 17 16 20 16 L44 16 C47 16 49 17 50 20 L54 32 L54 34 C54 35.1 53.1 36 52 36 L50 36 C50 36 50 34 48 34 L16 34 C14 34 14 36 14 36 L12 36 C10.9 36 10 35.1 10 34 Z" fill="#9ca3af"/><circle cx="20" cy="34" r="4" fill="#6b7280"/><circle cx="44" cy="34" r="4" fill="#6b7280"/><rect x="22" y="19" width="20" height="10" rx="2" fill="#d1d5db"/></svg></div>
+      <span class="rank-badge">#11</span>
+    </div>
+    <div class="card-body">
+      <div class="car-title">2012 Subaru Forester 2.5X</div>
+      <div class="pills">
+        <span class="pill">$9,800</span>
+        <span class="pill">95,087 mi</span>
+        <span class="pill">~22 MPG</span>
+        <span class="pill">68 cu ft cargo</span>
+      </div>
+      <div class="specs">2.5L 4-cyl (EJ25) &nbsp;|&nbsp; 4-speed automatic (4EAT) &nbsp;|&nbsp; AWD</div>
+      <div class="dealer-line"><strong>Brian Courtney Auto Sales</strong> &mdash; Alliance, OH</div>
+      <a class="view-btn" href="https://www.cargurus.com/details/447034641" target="_blank" rel="noopener">View Listing &rarr;</a>
+      <div class="issues-box">
+        <div class="box-label">Known Issues</div>
+        <ul>
+          <li>EJ25 head gasket risk &mdash; PPI critical</li>
+        </ul>
+      </div>
+      <div class="notes-box">
+        <div class="box-label">Notes</div>
+        <p>Lowest EJ25 mileage + best documented history but $9,800 leaves almost no repair buffer. Bottom-tier keep &mdash; pursue only if others fall through. PPI mandatory.</p>
+      </div>
+      <div class="score-section">
+        <div class="score-header">Score Breakdown &mdash; 60 / 100</div>
+        <div class="score-row"><span class="score-key">Cargo</span><div class="score-bar-bg"><div class="score-bar-fill" style="width:70%;background:#6366f1"></div></div><span class="score-val">7</span></div>
+        <div class="score-row"><span class="score-key">Reliability</span><div class="score-bar-bg"><div class="score-bar-fill" style="width:80%;background:#10b981"></div></div><span class="score-val">8</span></div>
+        <div class="score-row"><span class="score-key">AWD</span><div class="score-bar-bg"><div class="score-bar-fill" style="width:100%;background:#3b82f6"></div></div><span class="score-val">10</span></div>
+        <div class="score-row"><span class="score-key">Mileage</span><div class="score-bar-bg"><div class="score-bar-fill" style="width:80%;background:#f59e0b"></div></div><span class="score-val">8</span></div>
+        <div class="score-row"><span class="score-key">Price</span><div class="score-bar-bg"><div class="score-bar-fill" style="width:20%;background:#f59e0b"></div></div><span class="score-val">2</span></div>
+        <div class="score-row"><span class="score-key">MPG</span><div class="score-bar-bg"><div class="score-bar-fill" style="width:70%;background:#8b5cf6"></div></div><span class="score-val">7</span></div>
+        <div class="score-row"><span class="score-key">Service</span><div class="score-bar-bg"><div class="score-bar-fill" style="width:80%;background:#ec4899"></div></div><span class="score-val">8</span></div>
+        <div class="score-row"><span class="score-key">Dealer</span><div class="score-bar-bg"><div class="score-bar-fill" style="width:80%;background:#14b8a6"></div></div><span class="score-val">8</span></div>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+<!-- DIVIDER 2 -->
+<div class="divider-block">
+  <hr class="divider">
+  <div class="divider-label">Fallbacks &mdash; Only If Primary Choice Sells First</div>
+</div>
+
+<!-- GROUP 3: FALLBACKS -->
+<div class="grid" id="group-fallbacks">
+
+  <!-- Card #12: 2008 Volvo XC70 3.2 (147k mi) (score 63) -->
+  <div class="card">
+    <div class="photo-wrap">
+      <img src="https://platform.cstatic-images.com/xxlarge/in/v2/970dec94-a2ce-5cdf-aa7f-5a202ffd0c1f/3b648e61-4128-4d40-9095-493cf9ff62fd/8JmWBhZLQnbc9-2_4nm4vR2eSys.jpg" alt="2008 Volvo XC70" style="width:100%;height:100%;object-fit:contain;display:block;" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+      <div class="photo-placeholder" style="display:none"><svg width="64" height="48" viewBox="0 0 64 48" fill="none" xmlns="http://www.w3.org/2000/svg"><rect width="64" height="48" rx="4" fill="#d1d5db"/><path d="M10 32 L14 20 C15 17 17 16 20 16 L44 16 C47 16 49 17 50 20 L54 32 L54 34 C54 35.1 53.1 36 52 36 L50 36 C50 36 50 34 48 34 L16 34 C14 34 14 36 14 36 L12 36 C10.9 36 10 35.1 10 34 Z" fill="#9ca3af"/><circle cx="20" cy="34" r="4" fill="#6b7280"/><circle cx="44" cy="34" r="4" fill="#6b7280"/><rect x="22" y="19" width="20" height="10" rx="2" fill="#d1d5db"/></svg></div>
+      <span class="rank-badge">#12</span>
+    </div>
+    <div class="card-body">
+      <div class="car-title">2008 Volvo XC70 3.2 (147k mi)</div>
+      <div class="pills">
+        <span class="pill">$4,955</span>
+        <span class="pill">147,000 mi</span>
+        <span class="pill">~19 MPG</span>
+        <span class="pill">70 cu ft cargo</span>
+      </div>
+      <div class="specs">3.2L I6 &nbsp;|&nbsp; 6-speed automatic &nbsp;|&nbsp; AWD</div>
+      <div class="dealer-line"><strong>Lake Auto Sales, LLC</strong> &mdash; Hartville, OH</div>
+      <a class="view-btn" href="https://www.cars.com/vehicledetail/a9cc4a6d-69a0-48ff-839c-6b0ede3c3837/" target="_blank" rel="noopener">View Listing &rarr;</a>
+      <div class="issues-box">
+        <div class="box-label">Known Issues</div>
+        <ul>
+          <li>Volvo: higher maintenance costs &mdash; budget accordingly</li>
+        </ul>
+      </div>
+      <div class="notes-box">
+        <div class="box-label">Notes</div>
+        <p>Fallback to kept 2008 XC70 (133k mi). Same price, same dealer, 14k more miles &mdash; only pursue if the 133k one sells first. Verify non-personal use history.</p>
+      </div>
+      <div class="score-section">
+        <div class="score-header">Score Breakdown &mdash; 63 / 100</div>
+        <div class="score-row"><span class="score-key">Cargo</span><div class="score-bar-bg"><div class="score-bar-fill" style="width:70%;background:#6366f1"></div></div><span class="score-val">7</span></div>
+        <div class="score-row"><span class="score-key">Reliability</span><div class="score-bar-bg"><div class="score-bar-fill" style="width:70%;background:#10b981"></div></div><span class="score-val">7</span></div>
+        <div class="score-row"><span class="score-key">AWD</span><div class="score-bar-bg"><div class="score-bar-fill" style="width:100%;background:#3b82f6"></div></div><span class="score-val">10</span></div>
+        <div class="score-row"><span class="score-key">Mileage</span><div class="score-bar-bg"><div class="score-bar-fill" style="width:40%;background:#f59e0b"></div></div><span class="score-val">4</span></div>
+        <div class="score-row"><span class="score-key">Price</span><div class="score-bar-bg"><div class="score-bar-fill" style="width:100%;background:#f59e0b"></div></div><span class="score-val">10</span></div>
+        <div class="score-row"><span class="score-key">MPG</span><div class="score-bar-bg"><div class="score-bar-fill" style="width:50%;background:#8b5cf6"></div></div><span class="score-val">5</span></div>
+        <div class="score-row"><span class="score-key">Service</span><div class="score-bar-bg"><div class="score-bar-fill" style="width:60%;background:#ec4899"></div></div><span class="score-val">6</span></div>
+        <div class="score-row"><span class="score-key">Dealer</span><div class="score-bar-bg"><div class="score-bar-fill" style="width:50%;background:#14b8a6"></div></div><span class="score-val">5</span></div>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+<footer>
+  Generated 2026-05-29 &middot; Criteria weights: reliability (w9), AWD (w9), price (w8), service history (w7), cargo space (w6), mileage (w6), fuel economy (w5), dealer quality (w4)
+</footer>
+
+</body>
+</html>
